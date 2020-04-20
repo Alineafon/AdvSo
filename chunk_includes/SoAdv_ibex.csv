@@ -1,0 +1,17 @@
+﻿Audiofile;OptionA;OptionB;item;Group
+01SOV1.wav;A) A tia da Sabrina soube algo sobre o Mário no domingo.;L) O Mário ligou para alguém no domingo.;111;A
+02SOV2.wav;A) O Paulo retornou para algum lugar na segunda-feira.;L) A amiga da Sandy descobriu algo sobre o Paulo na segunda-feira.;212;A
+03V1.wav;A) O primo do Bruno declarou algo sobre a Laís depois da reunião.;L) A Laís brigou com alguém depois da reunião do conselho.;321;A
+04V2.wav;A) A Renata partiu para algum lugar depois do fim do semestre;L) O tio de Guilherme afirmou algo sobre a Renata depois do fim do semestre.;422;A
+01SOV2.wav;A) O Mário ligou para alguém no domingo.;L) A tia da Sabrina soube algo sobre o Mário no domingo.;112;B
+02V1.wav;A) A amiga da Sandy descobriu algo sobre o Paulo na segunda-feira.;L) O Paulo retornou para algum lugar na segunda-feira.;221;B
+03V2.wav;A) A Laís brigou com alguém depois da reunião do conselho.;L) O primo do Bruno declarou algo sobre a Laís depois da reunião.;322;B
+04SOV1.wav;A) O tio de Guilherme afirmou algo sobre a Renata depois do fim do semestre.;L) A Renata partiu para algum lugar depois do fim do semestre;411;B
+01V1.wav;A) A tia da Sabrina soube algo sobre o Mário no domingo.;L) O Mário ligou para alguém no domingo.;121;C
+02V2.wav;A) O Paulo retornou para algum lugar na segunda-feira.;L) A amiga da Sandy descobriu algo sobre o Paulo na segunda-feira.;222;C
+03SOV1.wav;A) O primo do Bruno declarou algo sobre a Laís depois da reunião.;L) A Laís brigou com alguém depois da reunião do conselho.;311;C
+04SOV2.wav;A) A Renata partiu para algum lugar depois do fim do semestre;L) O tio de Guilherme afirmou algo sobre a Renata depois do fim do semestre.;412;C
+01V2.wav;A) O Mário ligou para alguém no domingo.;L) A tia da Sabrina soube algo sobre o Mário no domingo.;122;D
+02SOV1.wav;A) A amiga da Sandy descobriu algo sobre o Paulo na segunda-feira.;L) O Paulo retornou para algum lugar na segunda-feira.;211;D
+03SOV2.wav;A) A Laís brigou com alguém depois da reunião do conselho.;A) O primo do Bruno declarou algo sobre a Laís depois da reunião.;312;D
+04V1.wav;A) O tio de Guilherme afirmou algo sobre a Renata depois do fim do semestre.;A) A Renata partiu para algum lugar depois do fim do semestre;421;D
