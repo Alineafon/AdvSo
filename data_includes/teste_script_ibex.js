@@ -1,21 +1,21 @@
 PennController.ResetPrefix(null)
 
-Sequence("welcome", randomize("experiment"), "final")
+Sequence("welcome", randomize("training"), "teste", randomize("experiment"), "final")
 
 
 newTrial("welcome",
     defaultText
         .print()
-    ,
+   ,
     newText("<p>Bem-vindos!</p>")
     ,
     newText("<p>Neste experimento, voc&ecirc; vai ouvir uma frase e depois deve escolher a melhor op&ccedil;&atilde;o de interpreta&ccedil;&atilde;o para ela.</p>")
     ,
-    newText("<p> Sua tarefa &eacute;: ou&ccedil;a a frase e depois clique no bot&atilde;o &quot;Pr&oacute;ximo&quot;,</p>")
+    newText("<p> Sua tarefa &eacute;: ou&ccedil;a a frase e depois clique no bot&atilde;o &quot;Pr&oacute;ximo&quot;.</p>")
     ,
     newText("<p>Escolha uma das op&ccedil;&otilde;es de interpreta&ccedil;&atilde;o, apertando: </p>")
     ,
-    newText("a tecla <strong>A</strong> para a op&ccedil;&atilde;o da esquerda, ou a tecla <strong>L</strong> para a op&ccedil;&atilde;o da direita.
+    newText("a tecla <strong>A</strong> para a op&ccedil;&atilde;o da esquerda, ou a tecla <strong>L</strong> para a op&ccedil;&atilde;o da direita.</p>")
     ,
     newText("<p>Por favor, escreva se NOME na caixa abaixo.</p>")
     ,
@@ -59,10 +59,9 @@ newTrial("welcome",
     .log( "AGE" , getVar("AGE") )
     .log( "SCHOOL" , getVar("SCHOOL") )
 
-// This Template command generates as many trials as there are rows in myTable.csv
-Template( "SoAdv_ibex.csv" ,
+Template( "treino_SoAdv_ibex.csv" ,
     // Row will iteratively point to every row in myTable.csv
-    variable => newTrial( "experiment",
+    variable => newTrial( "training",
         newAudio(variable.Audiofile)
          .play()
         ,
@@ -104,6 +103,62 @@ Template( "SoAdv_ibex.csv" ,
     .wait() 
      
     ))
+    newTrial("teste",
+    
+    newText("<p>Agora que voc&ecirc; j&aacute; praticou, vamos come&ccedil;!</p>")
+    .print()
+    ,
+    newButton("Start")
+    .css("font-size","1em")
+        .print()
+        .wait()
+        )
+
+// This Template command generates as many trials as there are rows in myTable.csv
+Template( "SoAdv_ibex.csv" ,
+    // Row will iteratively point to every row in myTable.csv
+    variable => newTrial( "experiment",
+        newAudio(variable.Audiofile)
+         .play()
+        ,
+    newImage("alto_falante_icone.png")
+    .size(90, 90)
+    .print()
+ ,
+    newButton("Pr&oacute;ximo")
+    .css("font-size","1em")
+    .center()
+    .print()
+    .log()
+    .wait()
+    .remove()
+    ,
+    getImage("alto_falante_icone.png")
+    .remove()
+    ,
+    
+    newText("A",variable.OptionA)
+    .css("font-size","1.2em")
+    //.print
+    ,
+    newText("L",variable.OptionB)
+    .css("font-size","1.2em")
+    //.print   
+    ,
+     newCanvas(1400,700)
+    .add(50 , 100 , getText("A") )
+    .add(750 , 100 , getText("L") )
+    .print()
+    ,
+
+    //newKey("AL")
+    newSelector()
+    .add( getText("A") , getText("L") )
+    .keys(          "A"    ,          "L"   )
+    .log()
+    .wait() 
+     
+    ))
     
 
 newTrial( "final" ,
@@ -118,4 +173,3 @@ newTrial( "final" ,
         .print()
         .wait()
  )
-
