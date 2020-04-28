@@ -1,3 +1,6 @@
+//Início do Script
+
+//Inativa os prefixos do IBEX (sem esse comando os códigos não funcionarão
 PennController.ResetPrefix(null);
 
 //Sequência de telas do experimento
@@ -35,7 +38,7 @@ newTrial("welcome",
         .css("font-size","1.2em")
         .print()
     ,
-    newText("<p>Agora selecione sua ESCOLARIDADE na caixa abaixo e aperte &quot;Start&quot; para come&ccedil;ar!</p>")
+    newText("<p>Agora selecione sua ESCOLARIDADE na caixa abaixo e aperte &quot;Iniciar&quot; para come&ccedil;ar!</p>")
         .css("font-size","1.2em")
         .print()
     ,
@@ -78,17 +81,17 @@ newTrial("tela2",
         .css("font-size","1.2em")
         .print()
     ,
-    newText("<p>Vamos realizar um pequeno treino para voc&ecirc; se familiarizar com o experimento</p>")
+    newText("<p>Vamos realizar um pequeno treino para voc&ecirc; se familiarizar com o experimento.</p>")
     ,
     newText("<p>INSTRU&Ccedil;&Otilde;ES:</p>")
     ,
-    newText("<p>Ou&ccedil;a a frase com aten&ccedil;&atilde;o e depois clique no bot&atilde;o &quot;Pr&oacute;ximo&quot; para ver as duas op&ccedil;&otilde;es de interpreta&ccedil;&atilde;o <strong>A</strong> e <strong>B</strong>.</p>")
+    newText("<p>Ou&ccedil;a a frase com aten&ccedil;&atilde;o e depois clique no bot&atilde;o &quot;Pr&oacute;ximo&quot; para ver as duas op&ccedil;&otilde;es de interpreta&ccedil;&atilde;o: <strong>A</strong> e <strong>B</strong>.</p>")
     ,
-    newText("<p>Clique em cima da op&ccedil;&atilde;o que voc&ecirc; acha que &eacute; a melhor de acordo com a frase que voc&ecirc; ouviu.</p>")
+    newText("<p>Clique em cima da op&ccedil;&atilde;o que voc&ecirc; acha que &eacute; a melhor, de acordo com a frase que voc&ecirc; ouviu.</p>")
     ,
-    newText("<p>Se poss&iacute;vel utilize fones de ouvido para realizar o experimento</p>")
+    newText("<p>Se poss&iacute;vel, utilize fones de ouvido para realizar o experimento.</p>")
     ,
-    newText("<p>Aperte &quot;Iniciar&quot; para come&ccedil;ar</p>")
+    newText("<p>Aperte &quot;Iniciar&quot; para come&ccedil;ar.</p>")
     ,
     //Cria um novo botão nomeado "Iniciar" e envia para o arquivo "results" a informação de quando ele é pressionado
     newButton("Iniciar")
@@ -109,7 +112,7 @@ Template("treino_SoAdv2.csv",
         ,
         //Exibe na tela a imagem "alto_falante_icone.png"
         newImage("alto_falante_icone.png")
-            .size(90, 90)
+            .size( 90 , 90 )
             .print()
         ,
         //Cria um botão nomeado "Próximo", envia para o arquivo "results" a informação de quando ele foi pressionado e remove ele da tela
@@ -134,8 +137,8 @@ Template("treino_SoAdv2.csv",
             .css("font-size","1.2em")
         ,
         //Cria um canvas (uma caixa) e coloca os textos "A" e "B" um ao lado do outro
-        newCanvas(1400,700)
-            .add(   50 , 100 , getText("A") )
+        newCanvas( 1400 , 700 )
+            .add( 50 , 100 , getText("A") )
             .add( 750 , 100 , getText("B") )
             .print() //Agora, dentro do canvas, é que os textos "A" e "B" serão impressos na tela
         ,
@@ -158,9 +161,11 @@ newTrial("tela3",
         .css("font-size","1.2em")
         .print()
     ,
-    newText("<p>Agora que voc&ecirc j&aacute; praticou vamos iniciar o experimento </p>")
+    newText("<p>Agora que voc&ecirc j&aacute; praticou, vamos iniciar o experimento!</p>")
     ,
-    newText("<p>Clique em &quot;Iniciar&quot; quando estiver pronto para come&ccedil;ar</p> ")
+    newText("<p>A tarefa irá durar em torno de 10 minutos, certifique-se de que você está em um lugar tranquilo e silencioso para que não haja interrupções.</p>")
+    ,
+    newText("<p>Clique em &quot;Iniciar&quot; quando estiver pronto para come&ccedil;ar.</p>")
     ,
     newButton("Iniciar")
         .css("font-size","1.2em")
@@ -177,7 +182,7 @@ Template("SoAdv_ibex.csv",
              .play()
         ,
         newImage("alto_falante_icone.png")
-            .size(90, 90)
+            .size( 90 , 90 )
             .print()
         ,
         newButton("Pr&oacute;ximo")
@@ -191,23 +196,20 @@ Template("SoAdv_ibex.csv",
         getImage("alto_falante_icone.png")
             .remove()
         ,
-        getAudio(variable.AudioTreino)
-            .pause()
-        ,
         newText("A",variable.OptionA)
             .css("font-size","1.2em")
         ,
         newText("B",variable.OptionB)
             .css("font-size","1.2em") 
         ,
-        newCanvas(1400,700)
+        newCanvas( 1400 , 700 )
             .add(   50 , 100 , getText("A") )
             .add( 750 , 100 , getText("B") )
             .print()
         ,
         newSelector()
             .add( getText("A") , getText("B") )
-            .keys(          "A"    ,          "B"   )
+            .keys("A","B")
             .log()
             .wait()
     ) 
@@ -232,3 +234,4 @@ newTrial( "final" ,
         .print()
         .wait()
  );
+//Fim do Script
