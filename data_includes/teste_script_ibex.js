@@ -99,7 +99,7 @@ newTrial("tela2",
         .wait()
 )
 
-//
+//Indica o uso da tabela "treino_SoAdv2.csv"
 Template("treino_SoAdv2.csv",
 // "variable" vai automaticamente apontar para cada linha da tabela "treino_SoAdv2.csv"
     variable => newTrial( "treino",
@@ -146,91 +146,89 @@ Template("treino_SoAdv2.csv",
             .log()
             .wait()
     )
+         
     //Envia para o arquivo "results" o conteúdo da coluna "Group" 
     .log("Group", variable.Group)
     .log("Item", variable.item)
 );
 
+//Nova Tela - Tela de instruções do experimento
 newTrial("tela3", 
-defaultText
-    .css("font-size","1.2em")
-    .print()
-    ,
-       newText("<p>Agora que voc&ecirc j&aacute; praticou vamos iniciar o experimento </p>")
-        ,
-        newText("<p>Clique em &quot;Iniciar&quot; quando estiver pronto para come&ccedil;ar</p> ")
-        ,
-        newButton("Iniciar")
-            .css("font-size","1.2em")
-            .print()
-            .center()
-            .log()
-            .wait()
-    )
-        
-    
-Template( "SoAdv_ibex.csv",
-    // Row will iteratively point to every row in myTable.csv
-    variable => newTrial( "experiment",
-    
-        newAudio(variable.Audiofile)
-         .play()
-        ,
-    newImage("alto_falante_icone.png")
-        .size(90, 90)
+    defaultText
+        .css("font-size","1.2em")
         .print()
     ,
-        newButton("Pr&oacute;ximo")
+    newText("<p>Agora que voc&ecirc j&aacute; praticou vamos iniciar o experimento </p>")
+    ,
+    newText("<p>Clique em &quot;Iniciar&quot; quando estiver pronto para come&ccedil;ar</p> ")
+    ,
+    newButton("Iniciar")
         .css("font-size","1.2em")
         .print()
         .center()
         .log()
         .wait()
-        .remove()
-    ,
-    getImage("alto_falante_icone.png")
-        .remove()
-    ,
-    getAudio(variable.AudioTreino)
-        .pause()
-    ,
-    newText("A",variable.OptionA)
-    .css("font-size","1.2em")
-    //.print
-    ,
-    newText("B",variable.OptionB)
-    .css("font-size","1.2em")
-    //.print   
-    ,
-     newCanvas(1400,700)
-      .add(   50 , 100 , getText("A") )
-        .add( 750 , 100 , getText("B") )
-        .print()
-    ,
-
-    //newKey("AL")
-    newSelector()
-    .add( getText("A") , getText("B") )
-    .keys(          "A"    ,          "B"   )
-    .log()
-     .wait()
     )
+        
+//Indica o uso da tabela "SoAdv_ibex.csv"    
+Template("SoAdv_ibex.csv",
+    variable => newTrial( "experiment",
+        newAudio(variable.Audiofile)
+             .play()
+        ,
+        newImage("alto_falante_icone.png")
+            .size(90, 90)
+            .print()
+        ,
+        newButton("Pr&oacute;ximo")
+            .css("font-size","1.2em")
+            .print()
+            .center()
+            .log()
+            .wait()
+            .remove()
+        ,
+        getImage("alto_falante_icone.png")
+            .remove()
+        ,
+        getAudio(variable.AudioTreino)
+            .pause()
+        ,
+        newText("A",variable.OptionA)
+            .css("font-size","1.2em")
+        ,
+        newText("B",variable.OptionB)
+            .css("font-size","1.2em") 
+        ,
+        newCanvas(1400,700)
+            .add(   50 , 100 , getText("A") )
+            .add( 750 , 100 , getText("B") )
+            .print()
+        ,
+        newSelector()
+            .add( getText("A") , getText("B") )
+            .keys(          "A"    ,          "B"   )
+            .log()
+            .wait()
+    ) 
+         
     .log("Group", variable.Group)
     .log("Item", variable.item)
-    .log("RespostaEsperada", variable.RespostaEsperada)
-    );
-    
+    .log("RespostaEsperada", variable.RespostaEsperada)      
+);
+
+//Nova Tela - Tela final    
 newTrial( "final" ,
     newText("<p> Obrigada pela participa&ccedil;&atilde;o!</p>")
-    .css("font-size","1.2em")
+        .css("font-size","1.2em")
         .print()
     ,
     newText("<p> Aperte &quot;Salvar&quot; para gravar suas respostas!</p>")
-    .css("font-size","1.2em")
+        .css("font-size","1.2em")
         .print()
     ,
     newButton("Salvar")
-    .css("font-size","1.2em")
+        .css("font-size","1.2em")
         .print()
         .wait()
  );
