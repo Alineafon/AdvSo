@@ -4,7 +4,7 @@
 PennController.ResetPrefix(null);
 
 //Sequência de telas do experimento
-Sequence ("welcome", "tela2", "treino", "tela3" , randomize("experiment"), "final");
+Sequence ("welcome", "tela2", "treino", "tela3" , randomize("experiment"), SendResults(), "final");
 
 //Nova tela - Tela inicial do participante
 newTrial("welcome",
