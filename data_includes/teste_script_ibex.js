@@ -2,6 +2,7 @@
 
 //Inativa os prefixos do IBEX (sem esse comando os códigos não funcionarão
 PennController.ResetPrefix(null);
+PennController.DebugOff();
 
 //Sequência de telas do experimento
 Sequence ("welcome", "tela2", "treino", "tela3" , randomize("experiment"), SendResults(), "final");
