@@ -116,6 +116,7 @@ Template("treino_SoAdv2.csv",
             .size( 90 , 90 )
             .print()
         ,
+        //Faz com que o botão nomeado "Próximo só apareça após a execução completa do áudio
         getAudio("AudioTreino")
             .wait("first")
         ,
@@ -182,12 +183,16 @@ newTrial("tela3",
 //Indica o uso da tabela "SoAdv_ibex.csv"    
 Template("SoAdv_ibex.csv",
     variable => newTrial( "experiment",
-        newAudio(variable.Audiofile)
+        newAudio("Audiofile", variable.Audiofile)
              .play()
         ,
         newImage("alto_falante_icone.png")
             .size( 90 , 90 )
             .print()
+        ,
+        //Faz com que o botão nomeado "Próximo só apareça após a execução completa do áudio
+        getAudio("Audiofile")
+            .wait("first")
         ,
         newButton("Pr&oacute;ximo")
             .css("font-size","1.2em")
