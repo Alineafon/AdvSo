@@ -108,13 +108,16 @@ Template("treino_SoAdv2.csv",
 // "variable" vai automaticamente apontar para cada linha da tabela "treino_SoAdv2.csv"
     variable => newTrial( "treino",
     //"variable" aponta para todas as linhas da coluna "AudioTreino" da tabela "treino_SoAdv2" e toca o audio referente a elas
-        newAudio(variable.AudioTreino)
+        newAudio("AudioTreino", variable.AudioTreino)
             .play()
         ,
         //Exibe na tela a imagem "alto_falante_icone.png"
         newImage("alto_falante_icone.png")
             .size( 90 , 90 )
             .print()
+        ,
+        getAudio("AudioTreino")
+            .wait("first")
         ,
         //Cria um botão nomeado "Próximo", envia para o arquivo "results" a informação de quando ele foi pressionado e remove ele da tela
         newButton("Pr&oacute;ximo")
