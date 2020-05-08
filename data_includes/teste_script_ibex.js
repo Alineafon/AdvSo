@@ -239,4 +239,7 @@ newTrial( "final" ,
         .print()
         .wait()
  );
+
+//Ajeita a barra de pogresso para que ela fique completa
+.setOption("countsForProgressBar",false)
 //Fim do Script
