@@ -1,6 +1,6 @@
 //Início do Script
 
-//Inativa os prefixos do IBEX (sem esse comando os códigos não funcionarão
+//Inativa os prefixos do IBEX (sem esse comando os códigos não funcionarão)
 PennController.ResetPrefix(null);
 PennController.DebugOff();
 
@@ -16,7 +16,7 @@ newTrial("welcome",
     ,
     newText("<p>Bem-vindos!</p>")
     ,
-    newText("<p>Neste experimento, voc&ecirc; vai ouvir uma frase e depois deve escolher a melhor op&ccedil;&atilde;o de interpreta&ccedil;&atilde;o para ela.</p>")
+    newText("<p>Neste experimento, você vai ouvir uma frase e depois deve escolher a melhor op&ccedil;&atilde;o de interpreta&ccedil;&atilde;o para ela.</p>")
     ,
     newText("<p>Por favor, escreva seu NOME COMPLETO na caixa abaixo.</p>")
     ,
@@ -230,17 +230,14 @@ Template("SoAdv_ibex.csv",
 
 //Nova Tela - Tela final    
 newTrial( "final" ,
-    newText("<p> Obrigada pela participa&ccedil;&atilde;o!</p>")
+    newText("<p> O experimento foi conclu&iacute;do. Obrigada pela participa&ccedil;&atilde;o!</p>")
         .css("font-size","1.2em")
         .print()
     ,
-    newText("<p> Aperte &quot;Salvar&quot; para gravar suas respostas!</p>")
+    newText("<p> Voc&ecirc; receber&aacute; um e-mail com a sua declara&ccedil;&atilde;o de participa&ccedil;&atilde;o</p>")
         .css("font-size","1.2em")
         .print()
     ,
-    newButton("Salvar")
-        .css("font-size","1.2em")
-        .print()
-        .wait()
+    
  );
 //Fim do Script
