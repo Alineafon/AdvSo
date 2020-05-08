@@ -241,5 +241,5 @@ newTrial( "final" ,
  );
 
 //Ajeita a barra de pogresso para que ela fique completa
-.setOption("countsForProgressBar",false)
+.setOption("countsForProgressBar",false);
 //Fim do Script
