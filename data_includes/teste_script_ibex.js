@@ -2,7 +2,7 @@
 
 //Inativa os prefixos do IBEX (sem esse comando os códigos não funcionarão)
 PennController.ResetPrefix(null);
-//PennController.DebugOff();
+PennController.DebugOff();
 
 //Sequência de telas do experimento
 Sequence ("welcome", "tela2", "treino", "tela3" , randomize("experiment"), SendResults(), "final");
@@ -234,7 +234,7 @@ newTrial( "final" ,
         .css("font-size","1.2em")
         .print()
     ,
-    newText("<p> Voc&ecirc; receber&aacute; um e-mail com a sua declara&ccedil;&atilde;o de participa&ccedil;&atilde;o</p>")
+    newText("<p> Voc&ecirc; receber&aacute; um e-mail com a sua declara&ccedil;&atilde;o de participa&ccedil;&atilde;o.</p>")
         .css("font-size","1.2em")
         .print()
         .wait()
