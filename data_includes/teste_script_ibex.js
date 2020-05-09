@@ -238,7 +238,7 @@ newTrial( "final" ,
         .css("font-size","1.2em")
         .print()
         .wait()
- );
+ )
 
 //Ajeita a barra de pogresso para que ela fique completa
 .setOption("countsForProgressBar",false);
