@@ -115,10 +115,7 @@ Template("treino_SoAdv2.csv",
         newImage("alto_falante_icone.png")
             .size( 90 , 90 )
             .print()
-        ,
-        //Faz com que o botão nomeado "Próximo só apareça após a execução completa do áudio
-        getAudio("AudioTreino")
-            .wait("first")
+       
         ,
         //Cria um botão nomeado "Próximo", envia para o arquivo "results" a informação de quando ele foi pressionado e remove ele da tela
         newButton("Pr&oacute;ximo")
@@ -189,10 +186,9 @@ Template("SoAdv_ibex.csv",
         newImage("alto_falante_icone.png")
             .size( 90 , 90 )
             .print()
-        ,
+       
         //Faz com que o botão nomeado "Próximo só apareça após a execução completa do áudio
-        getAudio("Audiofile")
-            .wait("first")
+      
         ,
         newButton("Pr&oacute;ximo")
             .css("font-size","1.2em")
