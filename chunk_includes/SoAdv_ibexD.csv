@@ -31,8 +31,7 @@ Audiofile,OptionA,OptionB,item,Group,RespostaEsperada
 09V2.wav,A. O Marcos havia sumido durante o julgamento do r&eacute;u,B. A amiga da Laura testemunhou algo duarante o julgamento do r&eacute;u,922,D,A
 10SOV1.wav,A. A colega da Lúcia confirmou algo no início do m&ecirc;s de setembro.,B. O Júlio renunciou ao cargo no início do m&ecirc;s de setembro.,1011,D,B
 11SOV2.wav,A. A Marcela mentiu sobre algo no ofício entregue ao s&oacute;cio.,B. O chefe do Alex afirmou algo no ofício entregue ao s&oacute;cio.,1112,D,A
-12V1.wav,A. A madrinha de Lia disse algo sobre o Jonas no encontro com os parentes.,B. Audiofile,OptionA,OptionB,item,Group,RespostaEsperada
-O Jonas chorou por algum motivo no encontro com os parentes.,1221,D,B
+12V1.wav,A. A madrinha de Lia disse algo sobre o Jonas no encontro com os parentes.,B.O Jonas chorou por algum motivo no encontro com os parentes.,1221,D,B
 13V2.wav,A. O Maurício tinha falido antes da venda da casa.,B. A irm&atilde; da K&aacute;tia admitiu algo antes da venda da casa.,1322,D,A
 14SOV1.wav,A. O pai de Rubens entendeu algo na 1ª semana de mar&ccedil;o.,B. A Larissa fugiu para algum lugar na 1ª semana de mar&ccedil;o.,1411,D,B
 15SOV2.wav,A. O Fernando foi eleito para um cargo na reuni&atilde;o do partido.,B. A colega da Carla anunciou algo na reuni&atilde;o do partido.,1512,D,A
