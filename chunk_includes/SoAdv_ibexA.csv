@@ -1,0 +1,42 @@
+Audiofile,OptionA,OptionB,item,Group,RespostaEsperada
+21D.wav,A. O Jairo escrevia as mensagens.,B. O Jairo lia as mensagens.,1,A,D
+22D.wav,A. As crian&ccedil;as comeram a merenda.,B. As crian&ccedil;as comeram os morangos.,2,A,D
+23D.wav,A. As &aacute;rvores cresciam no jardim.,B. As flores cresciam no jardim.,3,A,D
+24D.wav,A. O Carlos fez seu dever sozinho.,B. O L&eacute;o fez seu dever sozinho.,4,A,D
+25D.wav,A. O professor aprovou o Davi.,B. O professor aprovou o Lucas.,5,A,D
+26D.wav,A. A Bia se defendeu do assalto.,B. A Laura se defendeu do assalto.,6,A,D
+27D.wav,A. A Maria gostava de assistir novela.,B. A Maria gostava de ouvir música.,7,A,D
+28D.wav,A. A maioria da turma era estudiosa.,B. A turma toda era estudiosa.,8,A,D
+29D.wav,A. O Luiz guardou a mala no quarto de h&oacute;spedes.,B. A Raquel guardou a mala no quarto de h&oacute;spedes.,9,A,D
+31D.wav,A. O ladr&atilde;o estava com a maleta de dinheiro.,B. O detetive estava com a maleta de dinheiro.,11,A,D
+32D.wav,A. O policial estava armado.,B. O jovem estava armado.,12,A,D
+33D.wav,A. A crian&ccedil;a segurava o giz de cera.,B. A professora desenhou com o giz de cera.,13,A,D
+34D.wav,A. O rep&oacute;rter dirigia a motocicleta.,B. A celebridade dirigia a motocicleta.,14,A,D
+36D.wav,A. A Manuela gosta do Rodrigo.,B. A Manuela gosta do Pedro.,16,A,D
+37D.wav,A. Daniel e Camila acordam cedo.,B. Daniel e Camila dormem cedo.,17,A,D
+38D.wav,A. O beb&ecirc; chora quando est&aacute; com fome.,B. O beb&ecirc; chora quando est&aacute; com sono.,18,A,D
+39D.wav,A. A av&oacute; de Roberta pintava quadros.,B. A av&oacute; de Roberta bordava quadros.,19,A,D
+40D.wav,A. Paula e J&eacute;ssica v&atilde;o trabalhar.,B. Paula e J&eacute;ssica v&atilde;o se formar.,20,A,D
+41D.wav,A. A irm&atilde; de Pedrinho quer ser astronauta.,B. A irm&atilde; de Pedrinho quer ser astr&oacute;loga.,21,A,D
+43D.wav,A. O com&eacute;rcio abre cedo no interior.,B. O com&eacute;rcio fecha cedo no interior.,23,A,D
+44D.wav,A. A secret&aacute;ria era esfor&ccedil;ada.,B. A secret&aacute;ria era desastrada.,24,A,D
+01SOV1.wav,A. A tia da Sabrina soube algo sobre o Mario no domingo.,B. O Mario ligou para alguem no domingo.,111,A,B
+02SOV2.wav,A. O Paulo retornou para algum lugar na segunda-feira.,B. A amiga da Sandy descobriu algo sobre o Paulo na segunda-feira.,212,A,A
+03V1.wav,A. O primo do Bruno declarou algo sobre a Lais depois da reuniao.,B. A Lais brigou com alguem depois da reuniao do conselho.,321,A,B
+04V2.wav,A. A Renata partiu para algum lugar depois do fim do semestre,B. O tio de Guilherme afirmou algo sobre a Renata depois do fim do semestre.,422,A,A
+05SOV1.wav,A. O amigo o Luiz descobriu algo sobre Maria em janeiro,B. A Maria nasceu em meados do m&ecirc;s de janeiro,511,A,B
+06SOV2.wav,A. O Danilo errou sobre algo durante uma longa conversa,B. A m&atilde;e da Marta insistiu sobre algo durante uma longa conversa,612,A,A
+07V1.wav,A. A chefe da Carla denunciou algo no encontro com o delegado,B. O Jario roubou algo no encontro com o delegado,721,A,B
+08V2.wav,A. A Júlia saiu para algum lugar depois de uma longa discuss&atilde;o,B. O Irm&atilde;o de Lucas Admitiu algo depois de uma longa discuss&atilde;o,822,A,A
+09SOV1.wav,A. A amiga da Laura testemunhou algo durante o julgamento do r&eacute;u,B. O Marcos havia sumido durante o julgamento do r&eacute;u,911,A,B
+10SOV2.wav,A. O Júlio renunciou ao cargo no início do m&ecirc;s de setembro.,B. A colega da Lúcia confirmou algo no início do m&ecirc;s de setembro.,1012,A,A
+11V1.wav,A. O chefe do Alex afirmou algo no ofício entregue ao s&oacute;cio.,B. A Marcela mentiu sobre algo no ofício entregue ao s&oacute;cio.,1121,A,B
+12V2.wav,A. O Jonas chorou por algum motivo no encontro com os parentes.,B. A madrinha de Lia disse algo sobre o Jonas no encontro com os parentes.,1222,A,A
+13SOV1.wav,A. A irm&atilde; da K&aacute;tia admitiu algo antes da venda da casa.,B. O Maurício tinha falido antes da venda da casa.,1311,A,B
+14SOV2.wav,A. A Larissa fugiu para algum lugar na 1ª semana de mar&ccedil;o.,B. O pai de Rubens entendeu algo na 1ª semana de mar&ccedil;o.,1412,A,A
+15V1.wav,A. A colega da Carla anunciou algo na reuni&atilde;o do partido.,B. O Fernando foi eleito para um cargo na reuni&atilde;o do partido.,1521,A,B
+16V2.wav,A. A Elisa se mudou para algum lugar depois da festa de junho.,B. O av&ocirc; de Pedro mencionou algo depois da festa de junho.,1622,A,A
+17SOV1.wav,A. A professora da Ana revelou algo depois das f&eacute;rias de fevereiro.,B. O Bruno tinha se formado depois das f&eacute;rias de fevereiro.,1711,A,B
+18SOV2.wav,A. A Mariana escapou para algum lugar durante o interrogat&oacute;rio.,B. O chefe do Tales afirmou algo durante o interrogat&oacute;rio.,1812,A,A
+19V1.wav,A. O pai de Tiago declarou algo depois da contrata&ccedil;&atilde;o na firma.,B. A Rafaela se casou com algu&eacute;m depois da contrata&ccedil;&atilde;o na firma.,1921,A,B
+20V2.wav,A. O Jaime sofreu um surto durante a prova de física.,B. A colega da Paula ouviu algo sobre Jaime durante a prova de física.,2022,A,A
