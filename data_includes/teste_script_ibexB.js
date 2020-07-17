@@ -178,7 +178,7 @@ newTrial("tela3",
     )
         
 //Indica o uso da tabela "SoAdv_ibex.csv"    
-Template("SoAdv_ibex.csv",
+Template("SoAdv_ibexB.csv",
     variable => newTrial( "experiment",
         newAudio("Audiofile", variable.Audiofile)
              .play()
